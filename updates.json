@@ -1,7 +1,7 @@
 {
   "stable": {
-    "version": "3.1.3",
+    "version": "3.1.4",
     "url": "https://app.gumroad.com/library",
-    "notes": "Multi Box 3.1.3\n\n• Check for updates from Help & updates and open your Gumroad library to download.\n• Optional startup checks run in the background, at most once per day.\n• Preserves the 3.1.2 performance improvements, transparent preview labels and\n  independent click-through restoration for duplicate previews.\n"
+    "notes": "Multi Box 3.1.4\n\n• New Overview interface with violet accents, searchable preview cards and clear settings.\n• Integrated window controls and mouse-wheel scrolling across the preview dashboard.\n• Change DWM or Capture for existing previews from the inspector.\n• Crop handles, move and keyboard controls, image refresh and preview-size preservation.\n• Removed Session apps; saved workspaces and source reconnection remain available.\n• Retains transparent floating labels, independent duplicate mouse settings,\n  existing performance improvements, Gumroad activation and update checks.\n"
   }
 }
