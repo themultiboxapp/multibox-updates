@@ -1,0 +1,27 @@
+name: Announce Multi Box release
+
+on:
+  push:
+    branches: [main]
+    paths: [updates.json]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: multibox-discord-release
+  cancel-in-progress: false
+
+jobs:
+  announce:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Validate release and announce (manual runs are previews only)
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: python3 scripts/discord_release.py
