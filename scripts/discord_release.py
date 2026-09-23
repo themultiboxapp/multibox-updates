@@ -9,9 +9,10 @@ import urllib.request
 
 
 def version(value):
-    if not isinstance(value, str) or not re.fullmatch(r'\d+\.\d+\.\d+', value):
-        raise ValueError('Expected a stable version such as 3.1.5')
-    return tuple(map(int, value.split('.')))
+    if not isinstance(value, str) or not re.fullmatch(r'\d+\.\d+\.\d+(?:\.\d+)?', value):
+        raise ValueError('Expected a stable version such as 3.1.5 or 3.1.5.1')
+    parts = tuple(map(int, value.split('.')))
+    return parts + (0,) * (4 - len(parts))
 
 
 def payload(release):
