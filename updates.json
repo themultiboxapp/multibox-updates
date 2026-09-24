@@ -1,7 +1,7 @@
 {
   "stable": {
-    "version": "3.1.5",
+    "version": "3.1.5.1",
     "url": "https://app.gumroad.com/library",
-    "notes": "Multi Box 3.1.5\n- Shortcuts with or without modifiers, including F13-F24 programmable keys.\n- Shortcut conflict checks, recording safeguards and an enable/disable switch.\n- Clear download routes for Gumroad account holders and guest purchasers.\n"
+    "notes": "Multi Box 3.1.5.1\n- Visible Group controls and group-only assignment for selected previews.\n- Clear single-preview naming and preservation of mixed groups.\n- Recovery export before workspace deletion; deletion stops if backup fails.\n"
   }
 }
