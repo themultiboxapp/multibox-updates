@@ -1,7 +1,7 @@
 {
   "stable": {
-    "version": "3.1.5.1",
+    "version": "3.1.6",
     "url": "https://app.gumroad.com/library",
-    "notes": "Multi Box 3.1.5.1\n- Visible Group controls and group-only assignment for selected previews.\n- Clear single-preview naming and preservation of mixed groups.\n- Recovery export before workspace deletion; deletion stops if backup fails.\n"
+    "notes": "Multi Box 3.1.6\n- Closed source clients no longer leave blank floating previews; saved previews are retained.\n- New previews default to DWM while existing preview settings are preserved.\n- Both crop menus open the same full crop editor.\n- More resilient preview cleanup when closing Multi Box.\n- Includes sidebar visibility and settings backup/recovery fixes.\n"
   }
 }
