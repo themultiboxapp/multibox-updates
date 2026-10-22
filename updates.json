@@ -1,7 +1,7 @@
 {
   "stable": {
-    "version": "3.1.6",
+    "version": "3.1.7",
     "url": "https://app.gumroad.com/library",
-    "notes": "Multi Box 3.1.6\n- Closed source clients no longer leave blank floating previews; saved previews are retained.\n- New previews default to DWM while existing preview settings are preserved.\n- Both crop menus open the same full crop editor.\n- More resilient preview cleanup when closing Multi Box.\n- Includes sidebar visibility and settings backup/recovery fixes.\n"
+    "notes": "Multi Box 3.1.7\n- Shortcut fixes for held game keys and text-field focus after switching apps.\n- Keeps plain shortcuts from firing while typing in Multi Box; modifier shortcuts remain available.\n- Skippable first-time setup guide, available again from Help & updates.\n- Clearer guidance for missing DWM dashboard images and fullscreen games.\n"
   }
 }
