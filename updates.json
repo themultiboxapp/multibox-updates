@@ -1,7 +1,7 @@
 {
   "stable": {
-    "version": "3.1.7",
+    "version": "3.18",
     "url": "https://app.gumroad.com/library",
-    "notes": "Multi Box 3.1.7\n- Shortcut fixes for held game keys and text-field focus after switching apps.\n- Keeps plain shortcuts from firing while typing in Multi Box; modifier shortcuts remain available.\n- Skippable first-time setup guide, available again from Help & updates.\n- Clearer guidance for missing DWM dashboard images and fullscreen games.\n"
+    "notes": "Multi Box 3.18\n- Simplified internal code while retaining existing preview features.\n- Reduced repeated preview lookups and unnecessary layout-history copying.\n- Reduced dashboard work while hidden and repeated layout work when adding previews.\n- Retains the shortcut fixes and first-time setup guide from 3.1.7.\n"
   }
 }
