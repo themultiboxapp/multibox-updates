@@ -1,7 +1,7 @@
 {
   "stable": {
-    "version": "3.18",
+    "version": "3.1.8",
     "url": "https://app.gumroad.com/library",
-    "notes": "Multi Box 3.18\n- Simplified internal code while retaining existing preview features.\n- Reduced repeated preview lookups and unnecessary layout-history copying.\n- Reduced dashboard work while hidden and repeated layout work when adding previews.\n- Retains the shortcut fixes and first-time setup guide from 3.1.7.\n"
+    "notes": "Multi Box 3.1.8\n- Corrects the accidental 3.18 version label. If you installed 3.18, download this installer manually from your Gumroad library or receipt link.\n- Simplified internal code while retaining existing preview features.\n- Reduced repeated preview lookups and unnecessary layout-history copying.\n- Reduced dashboard work while hidden and repeated layout work when adding previews.\n- Retains the shortcut fixes and first-time setup guide from 3.1.7.\n"
   }
 }
