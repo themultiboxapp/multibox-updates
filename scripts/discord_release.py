@@ -8,7 +8,10 @@ import urllib.error
 import urllib.request
 
 
-def version(value):
+def version(value, previous=False):
+    # Only accept this historical typo when reading the preceding release.
+    if previous and value == '3.18':
+        value = '3.1.8'
     if not isinstance(value, str) or not re.fullmatch(r'\d+\.\d+\.\d+(?:\.\d+)?', value):
         raise ValueError('Expected a stable version such as 3.1.5 or 3.1.5.1')
     parts = tuple(map(int, value.split('.')))
@@ -53,7 +56,8 @@ def main():
         return
     old_json = subprocess.check_output(['git', 'show', before + ':updates.json'], text=True)
     old = json.loads(old_json)['stable']
-    if version(current['version']) <= version(old['version']):
+    correction = old['version'] == '3.18' and current['version'] == '3.1.8'
+    if not correction and version(current['version']) <= version(old['version'], previous=True):
         print('Version unchanged or lower; no announcement sent.')
         return
     webhook = os.environ.get('DISCORD_WEBHOOK_URL', '')
